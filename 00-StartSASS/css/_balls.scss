@@ -1,0 +1,48 @@
+@import "./color-variables";
+
+@mixin flexCenter($justify-content) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+}
+
+.bola-01 {
+  @include flexCenter(center);
+
+  width: 200px;
+  height: 200px;
+
+  border-radius: 9999px;
+
+  background-color: $primaryColor;
+
+  transition: background-color 0.3s;
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    color: $baseColor;
+  }
+
+  &:hover {
+    background-color: $secondaryColor;
+  }
+}
+
+.bola-02 {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 9999px;
+
+  background-color: $secondaryColor;
+}
+
+.bola-03 {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 9999px;
+
+  background-color: $primaryColor;
+}
